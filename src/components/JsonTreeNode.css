@@ -1,0 +1,66 @@
+.tree-node {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.tree-toggle {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.tree-toggle:hover {
+  background-color: rgba(100, 108, 255, 0.08);
+}
+
+.tree-arrow {
+  font-size: 10px;
+  width: 14px;
+  text-align: center;
+  flex-shrink: 0;
+  color: #888;
+}
+
+.tree-key {
+  color: #9876aa;
+  font-weight: 500;
+}
+
+.tree-preview {
+  color: #888;
+  font-style: italic;
+}
+
+.leaf {
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.tree-value.type-string {
+  color: #6a8759;
+}
+
+.tree-value.type-number {
+  color: #6897bb;
+}
+
+.tree-value.type-boolean {
+  color: #cc7832;
+}
+
+.tree-value.type-null {
+  color: #cc7832;
+  font-style: italic;
+}
+
+.tree-children {
+  border-left: 1px solid rgba(100, 108, 255, 0.15);
+  margin-left: 12px;
+}
