@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.library.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "incremental": false,
+    "outDir": "dist",
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "./src",
+    "./.storybook"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

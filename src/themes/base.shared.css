@@ -1,0 +1,41 @@
+
+
+@theme static {
+  /*
+    ANY THING PLACED HERE WILL BE AVAILABLE IN THE BASE STYLE FOR ALL PROJECTS
+  */
+
+  /*Test Colors*/
+  /* --color-adam-test-0: #0b0d33;
+  --color-adam-test-50: #ebf2ff;
+  --color-adam-test-100: #dae8ff;
+  --color-adam-test-200: #bdd3ff;
+  --color-adam-test-300: #95b5ff;
+  --color-adam-test-400: #6b8bff;
+  --color-adam-test-500: #4961ff; */
+
+  --color-hero-bg: #0b0d33;
+
+  /* --background-hero-pattern: var(--bg-hero-img); */
+
+  /* --pattern-hero-img: url('https://res.cloudinary.com/flowon/image/upload/fl_sanitize/v1649566924/images/bg_teal.svg'); */
+
+  /* --color-hero-img: url('https://res.cloudinary.com/flowon/image/upload/fl_sanitize/v1649566924/images/bg_teal.svg'); */
+
+  /* --bg-hero-pattern: var(--color-hero-img); */
+
+}
+
+@layer utilities {
+
+  .scroll-hide {
+    overflow: auto;
+    scrollbar-width: none;          /* Firefox */
+    -ms-overflow-style: none;       /* IE and Edge */
+  }
+
+  .scroll-hide::-webkit-scrollbar {
+    display: none;                  /* Chrome, Safari, Edge (Chromium) */
+  }
+
+}

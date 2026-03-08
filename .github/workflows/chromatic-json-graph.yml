@@ -1,0 +1,66 @@
+name: Chromatic JSON Graph
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - '.storybook/**'
+      - 'package.json'
+      - 'chromatic.config.json'
+      - '.github/workflows/chromatic-json-graph.yml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - '.storybook/**'
+      - 'package.json'
+      - 'chromatic.config.json'
+      - '.github/workflows/chromatic-json-graph.yml'
+
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Configure npm registries
+        env:
+          FONTAWESOME_NPM: ${{ secrets.FONTAWESOME_NPM }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if [[ -n "${FONTAWESOME_NPM}" ]]; then
+            pnpm config set @fortawesome:registry https://npm.fontawesome.com/
+            pnpm config set @awesome.me:registry https://npm.fontawesome.com/
+            pnpm config set '//npm.fontawesome.com/:_authToken' "${FONTAWESOME_NPM}"
+          fi
+
+          if [[ -n "${NPM_TOKEN}" ]]; then
+            pnpm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+          fi
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build package
+        run: pnpm build
+
+      - name: Publish Storybook to Chromatic
+        uses: chromaui/action@latest
+        env:
+          NODE_ENV: production
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          workingDir: .

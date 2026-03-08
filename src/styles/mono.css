@@ -1,0 +1,15 @@
+/*!
+ * Jet Brains Mono
+ */
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: light;
+  font-weight: 300;
+  src: local('JetBrains Mono'),url('/fonts/JetBrainsMono-Light.woff2') format('woff2');
+}
+
+.mono-light {
+  font-family: 'JetBrains Mono';
+  font-weight: 300;
+}
