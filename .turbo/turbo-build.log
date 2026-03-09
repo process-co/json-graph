@@ -10,21 +10,21 @@
 [34mCLI[39m Cleaning output folder
 [34mCJS[39m Build start
 [34mESM[39m Build start
-(node:2452) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/runner/work/proc-app/proc-app/out/process-co/json-graph/tailwind.config.ts?id=1773021360592 is not specified and it doesn't parse as CommonJS.
+[34mDTS[39m Build start
+(node:2461) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/runner/work/proc-app/proc-app/out/process-co/json-graph/tailwind.config.ts?id=1773022375746 is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to /home/runner/work/proc-app/proc-app/out/process-co/json-graph/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-[34mDTS[39m Build start
-[32mDTS[39m ⚡️ Build success in 5522ms
+[32mDTS[39m ⚡️ Build success in 4715ms
 [32mDTS[39m [1mdist/index.d.ts  [22m[32m1.17 KB[39m
 [32mDTS[39m [1mdist/index.d.mts [22m[32m1.17 KB[39m
 [32mCJS[39m [1mdist/index.css     [22m[32m224.74 KB[39m
 [32mCJS[39m [1mdist/index.css.map [22m[32m255.79 KB[39m
 [32mCJS[39m [1mdist/index.js      [22m[32m3.60 MB[39m
 [32mCJS[39m [1mdist/index.js.map  [22m[32m9.81 MB[39m
-[32mCJS[39m ⚡️ Build success in 40969ms
+[32mCJS[39m ⚡️ Build success in 36056ms
 [32mESM[39m [1mdist/index.css     [22m[32m224.74 KB[39m
 [32mESM[39m [1mdist/index.css.map [22m[32m255.79 KB[39m
 [32mESM[39m [1mdist/index.mjs     [22m[32m3.60 MB[39m
 [32mESM[39m [1mdist/index.mjs.map [22m[32m9.81 MB[39m
-[32mESM[39m ⚡️ Build success in 40975ms
+[32mESM[39m ⚡️ Build success in 36060ms
