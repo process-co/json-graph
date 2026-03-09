@@ -55,9 +55,9 @@ jobs:
           echo "Checking package structure..."
           [ -d "dist" ] || (echo "Error: dist directory missing!" && exit 1)
           [ -f "dist/index.js" ] || (echo "Error: dist/index.js missing!" && exit 1)
-          [ -f "dist/index.cjs" ] || (echo "Error: dist/index.cjs missing!" && exit 1)
+          [ -f "dist/index.mjs" ] || (echo "Error: dist/index.mjs missing!" && exit 1)
           [ -f "dist/index.d.ts" ] || (echo "Error: dist/index.d.ts missing!" && exit 1)
-          [ -f "css/ui.css" ] || (echo "Error: css/ui.css missing!" && exit 1)
+          [ -f "dist/index.css" ] || (echo "Error: dist/index.css missing!" && exit 1)
           echo "All required files found."
           echo ""
           echo "Package structure:"
@@ -69,6 +69,5 @@ jobs:
       - name: Publish to npm
         run: npm publish --access=public --no-git-checks
         env:
-          # NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_REGISTRY: ${{ github.event.inputs.registry || 'https://registry.npmjs.org' }}
 
