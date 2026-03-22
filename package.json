@@ -22,7 +22,7 @@
     "storybook": "storybook dev -p 6007",
     "build-storybook": "storybook build",
     "dev": "tsup --watch & storybook dev -p 6007",
-    "chromatic": "pnpx chromatic"
+    "chromatic": "chromatic"
   },
   "dependencies": {
     "@xyflow/react": "^12.0.0",

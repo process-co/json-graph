@@ -272,9 +272,6 @@ const config: Omit<Config, "content"> = {
       addVariant("app-drawer-open", ".app-drawer-open &");
     }),
     plugin(function ({ addVariant }) {
-      addVariant("MuiTextField-root", ".MuiTextField-root &");
-    }),
-    plugin(function ({ addVariant }) {
       addVariant("app-hide-left", ".app-hide-left &");
     }),
     plugin(function ({ addVariant }) {
