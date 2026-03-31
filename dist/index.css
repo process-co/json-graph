@@ -358,8 +358,8 @@
   .pui\:border-purple-600 {
     border-color: oklch(55.8% 0.288 302.321);
   }
-  .pui\:\!bg-gray-800 {
-    background-color: oklch(27.8% 0.033 256.848) !important;
+  .pui\:\!bg-\[\#282A3A\] {
+    background-color: #282A3A !important;
   }
   .pui\:bg-background {
     background-color: var(--background);

@@ -2,7 +2,7 @@
  * Theme constants for json-graph (dark theme, aligned with jsontree reference).
  */
 export const theme = {
-  canvasBackground: 'var(--color-gray-800)',
+  canvasBackground: '#282A3A',
   canvasDots: 'var(--color-gray-700)',
   rootNodeBg: '#3A3A4A',
   nodeBg: 'rgb(43, 44, 62)',

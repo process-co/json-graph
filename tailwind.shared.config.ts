@@ -6,7 +6,7 @@ import plugin from "tailwindcss/plugin"
 import typography from "@tailwindcss/typography"
 import animate from "tailwindcss-animate"
 import scrollBarHide from "tailwind-scrollbar-hide"
-import { themeColors, backgroundImage } from './tailwind-proc-theme';
+import { themeColors, backgroundImage } from '@repo/config-tailwind/tailwind-proc-theme';
 
 // TailwindCSS has deprecated some colors, so we need to remove them before spreading the colors object.
 // const {...activeColors } = colors

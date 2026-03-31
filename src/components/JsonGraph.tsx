@@ -263,15 +263,15 @@ function JsonGraphInner({ json, className }: JsonGraphProps) {
       >
         {/* <Controls position="bottom-left" /> */}
 
-        <Controls showZoom={false} fitViewOptions={{ padding: 0.2, maxZoom: 0.75 }} showInteractive={false} showFitView={false} position="bottom-left" orientation="horizontal" className="pui:!bg-gray-800 pui:!shadow-none pui:!border-gray-700 pui:border-1 pui:ring-2 pui:ring-gray-400/25 pui:overflow-hidden pui:rounded-sm pui:scale-100 pui:[&>]:-m-t-0 pui:!ml-3"
+        <Controls showZoom={false} fitViewOptions={{ padding: 0.2, maxZoom: 0.75 }} showInteractive={false} showFitView={false} position="bottom-left" orientation="horizontal" className="pui:!bg-[#282A3A] pui:!shadow-none pui:!border-gray-700 pui:border-1 pui:ring-2 pui:ring-gray-400/25 pui:overflow-hidden pui:rounded-sm pui:scale-100 pui:[&>]:-m-t-0 pui:!ml-3"
         // [&>:first-child]:rounded-l-xxs [&>:last-child]:rounded-r-xxs
         >
-          <ControlButton onClick={() => handleZoomOut()} className="pui:disabled:pointer-events-none pui:disabled:select-none pui:disabled:cursor-not-allowed pui:!bg-gray-800 pui:!text-white" >
+          <ControlButton onClick={() => handleZoomOut()} className="pui:disabled:pointer-events-none pui:disabled:select-none pui:disabled:cursor-not-allowed pui:!bg-[#282A3A] pui:!text-white" >
             <Tooltip><TooltipTrigger className="pui:pt-1 pui:-mt-1" asChild><FontAwesomeIcon icon={faMagnifyingGlassMinus} /></TooltipTrigger><TooltipContent>Zoom Out</TooltipContent></Tooltip>
           </ControlButton>
           <Popover open={zoomPopoverOpen} onOpenChange={setZoomPopoverOpen}>
             <PopoverTrigger asChild>
-              <ControlButton className="pui:disabled:pointer-events-none pui:disabled:select-none pui:disabled:cursor-not-allowed pui:!text-[8px] pui:!w-10 pui:font-mono pui:!bg-gray-800 pui:!text-white" >{(zoom * 100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + '%'}</ControlButton>
+              <ControlButton className="pui:disabled:pointer-events-none pui:disabled:select-none pui:disabled:cursor-not-allowed pui:!text-[8px] pui:!w-10 pui:font-mono pui:!bg-[#282A3A] pui:!text-white" >{(zoom * 100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + '%'}</ControlButton>
             </PopoverTrigger>
             <PopoverContent className="pui:!w-50 pui:!-ml-6.5 pui:!mb-2 pui:!shadow-none pui:border-purple-600 pui:ring-2 pui:ring-purple-600/20" side="top" align="start">
               <div className="pui:space-y-2 ">
@@ -291,10 +291,10 @@ function JsonGraphInner({ json, className }: JsonGraphProps) {
               </div>
             </PopoverContent>
           </Popover>
-          <ControlButton onClick={() => handleZoomIn()} className="pui:disabled:pointer-events-none pui:disabled:select-none pui:disabled:cursor-not-allowed pui:!bg-gray-800 pui:!text-white" >
+          <ControlButton onClick={() => handleZoomIn()} className="pui:disabled:pointer-events-none pui:disabled:select-none pui:disabled:cursor-not-allowed pui:!bg-[#282A3A] pui:!text-white" >
             <Tooltip ><TooltipTrigger className="pui:pt-1 pui:-mt-1" asChild><FontAwesomeIcon icon={faMagnifyingGlassPlus} /></TooltipTrigger><TooltipContent>Zoom In</TooltipContent></Tooltip>
           </ControlButton>
-          <ControlButton onClick={() => handleFitView()} className="pui:disabled:pointer-events-none pui:disabled:select-none pui:disabled:cursor-not-allowed pui:!bg-gray-800 pui:!text-white" >
+          <ControlButton onClick={() => handleFitView()} className="pui:disabled:pointer-events-none pui:disabled:select-none pui:disabled:cursor-not-allowed pui:!bg-[#282A3A] pui:!text-white" >
             <Tooltip><TooltipTrigger className="pui:pt-1 pui:-mt-1" asChild><FontAwesomeIcon icon={faSquareDashed} /></TooltipTrigger><TooltipContent>Fit View</TooltipContent></Tooltip>
           </ControlButton>
           {/* <ControlButton onClick={() => undo()} disabled={!canUndo() || !editMode} className="disabled:pointer-events-none disabled:select-none disabled:cursor-not-allowed" >
