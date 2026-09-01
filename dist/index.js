@@ -94308,7 +94308,7 @@ function handleAndDispatchCustomEvent(name, handler, detail, { discrete }) {
 var useLayoutEffect2 = globalThis?.document ? React18__namespace.useLayoutEffect : () => {
 };
 
-// ../../node_modules/.pnpm/@radix-ui+react-id@1.1.1_@types+react@19.2.2_react@19.2.2/node_modules/@radix-ui/react-id/dist/index.mjs
+// ../../node_modules/.pnpm/@radix-ui+react-id@1.1.1_@types+react@19.2.3_react@19.2.6/node_modules/@radix-ui/react-id/dist/index.mjs
 var useReactId = React18__namespace[" useId ".trim().toString()] || (() => void 0);
 var count = 0;
 function useId(deterministicId) {
@@ -101501,13 +101501,13 @@ function __spreadArray(to, from, pack) {
   return to.concat(ar || Array.prototype.slice.call(from));
 }
 
-// ../../node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll-bar/dist/es2015/constants.js
+// ../../node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/constants.js
 var zeroRightClassName = "right-scroll-bar-position";
 var fullWidthClassName = "width-before-scroll-bar";
 var noScrollbarsClassName = "with-scroll-bars-hidden";
 var removedBarSizeVariable = "--removed-body-scroll-bar-size";
 
-// ../../node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.2_react@19.2.2/node_modules/use-callback-ref/dist/es2015/assignRef.js
+// ../../node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.3_react@19.2.6/node_modules/use-callback-ref/dist/es2015/assignRef.js
 function assignRef(ref, value) {
   if (typeof ref === "function") {
     ref(value);
@@ -101571,7 +101571,7 @@ function useMergeRefs(refs, defaultValue) {
   return callbackRef;
 }
 
-// ../../node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.2_react@19.2.2/node_modules/use-sidecar/dist/es2015/medium.js
+// ../../node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.3_react@19.2.6/node_modules/use-sidecar/dist/es2015/medium.js
 function ItoI(a2) {
   return a2;
 }
@@ -101673,10 +101673,10 @@ function exportSidecar(medium, exported) {
   return SideCar;
 }
 
-// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll/dist/es2015/medium.js
+// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/medium.js
 var effectCar = createSidecarMedium();
 
-// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll/dist/es2015/UI.js
+// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/UI.js
 var nothing = function() {
   return;
 };
@@ -101714,7 +101714,7 @@ var getNonce = function() {
   return void 0;
 };
 
-// ../../node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.2_react@19.2.2/node_modules/react-style-singleton/dist/es2015/singleton.js
+// ../../node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.3_react@19.2.6/node_modules/react-style-singleton/dist/es2015/singleton.js
 function makeStyleTag() {
   if (!document)
     return null;
@@ -101760,7 +101760,7 @@ var stylesheetSingleton = function() {
   };
 };
 
-// ../../node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.2_react@19.2.2/node_modules/react-style-singleton/dist/es2015/hook.js
+// ../../node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.3_react@19.2.6/node_modules/react-style-singleton/dist/es2015/hook.js
 var styleHookSingleton = function() {
   var sheet = stylesheetSingleton();
   return function(styles2, isDynamic) {
@@ -101773,7 +101773,7 @@ var styleHookSingleton = function() {
   };
 };
 
-// ../../node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.2_react@19.2.2/node_modules/react-style-singleton/dist/es2015/component.js
+// ../../node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.3_react@19.2.6/node_modules/react-style-singleton/dist/es2015/component.js
 var styleSingleton = function() {
   var useStyle = styleHookSingleton();
   var Sheet = function(_a) {
@@ -101784,7 +101784,7 @@ var styleSingleton = function() {
   return Sheet;
 };
 
-// ../../node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll-bar/dist/es2015/utils.js
+// ../../node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/utils.js
 var zeroGap = {
   left: 0,
   top: 0,
@@ -101819,7 +101819,7 @@ var getGapWidth = function(gapMode) {
   };
 };
 
-// ../../node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll-bar/dist/es2015/component.js
+// ../../node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/component.js
 var Style = styleSingleton();
 var lockAttribute = "data-scroll-locked";
 var getStyles = function(_a, allowRelative, gapMode, important) {
@@ -101859,7 +101859,7 @@ var RemoveScrollBar = function(_a) {
   return React18__namespace.createElement(Style, { styles: getStyles(gap, !noRelative, gapMode, !noImportant ? "!important" : "") });
 };
 
-// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
+// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
 var passiveSupported = false;
 if (typeof window !== "undefined") {
   try {
@@ -101878,7 +101878,7 @@ if (typeof window !== "undefined") {
 var options;
 var nonPassive = passiveSupported ? { passive: false } : false;
 
-// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll/dist/es2015/handleScroll.js
+// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/handleScroll.js
 var alwaysContainsScroll = function(node) {
   return node.tagName === "TEXTAREA";
 };
@@ -101978,7 +101978,7 @@ var handleScroll = function(axis, endTarget, event, sourceDelta, noOverscroll) {
   return shouldCancelScroll;
 };
 
-// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll/dist/es2015/SideEffect.js
+// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/SideEffect.js
 var getTouchXY = function(event) {
   return "changedTouches" in event ? [event.changedTouches[0].clientX, event.changedTouches[0].clientY] : [0, 0];
 };
@@ -102143,10 +102143,10 @@ function getOutermostShadowParent(node) {
   return shadowParent;
 }
 
-// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll/dist/es2015/sidecar.js
+// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/sidecar.js
 var sidecar_default = exportSidecar(effectCar, RemoveScrollSideCar);
 
-// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.2_react@19.2.2/node_modules/react-remove-scroll/dist/es2015/Combination.js
+// ../../node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.2.3_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/Combination.js
 var ReactRemoveScroll = React18__namespace.forwardRef(function(props, ref) {
   return React18__namespace.createElement(RemoveScroll, __assign({}, props, { ref, sideCar: sidecar_default }));
 });
